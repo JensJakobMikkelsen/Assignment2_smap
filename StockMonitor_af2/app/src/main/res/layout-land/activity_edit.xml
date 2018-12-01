@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Edit">
+
+    <EditText
+        android:id="@+id/edit_Stocks"
+        android:layout_width="214dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/_0_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Price" />
+
+    <TextView
+        android:id="@+id/stocks"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="@string/price_3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/edit_Price"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stocks3" />
+
+    <TextView
+        android:id="@+id/stocks3"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="@string/name_3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/edit_Name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stocks2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="@string/stocks_3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/edit_Stocks"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stocks" />
+
+    <EditText
+        android:id="@+id/edit_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/irkutsk_petting_zoo_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/edit_Save_btn"
+        android:layout_width="94dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:text="@string/save_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Stocks"
+        tools:background="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/edit_Cancel_btn"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:text="@string/cancel_1"
+        app:layout_constraintEnd_toStartOf="@+id/edit_Save_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stocks2"
+        tools:background="@android:color/white" />
+
+    <EditText
+        android:id="@+id/edit_Price"
+        android:layout_width="214dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/_50_5_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Name" />
+
+</android.support.constraint.ConstraintLayout>

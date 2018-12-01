@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Details">
+
+    <TextView
+        android:id="@+id/Sector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/sector_1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Stocks" />
+
+    <TextView
+        android:id="@+id/sector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/bought_at"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sector" />
+
+    <TextView
+        android:id="@+id/txt_bought_for"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/bought_for"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sector" />
+
+    <TextView
+        android:id="@+id/Stocks"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/stocks_1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Price" />
+
+    <TextView
+        android:id="@+id/Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/price_1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+    <TextView
+        android:id="@+id/txt_box_Name"
+        android:layout_width="147dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="310dp"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="16dp"
+        android:gravity="left"
+        android:text="@string/irkutsk_petting_zoo"
+        app:layout_constraintStart_toEndOf="@+id/Name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_box_Price"
+        android:layout_width="147dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="316dp"
+        android:layout_marginLeft="316dp"
+        android:layout_marginTop="18dp"
+        android:gravity="left"
+        android:text="@string/_50_5_1"
+        app:layout_constraintStart_toEndOf="@+id/Price"
+        app:layout_constraintTop_toBottomOf="@+id/txt_box_Name" />
+
+    <TextView
+        android:id="@+id/txt_box_AmountOfStocks"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="295dp"
+        android:layout_marginLeft="295dp"
+        android:layout_marginTop="13dp"
+        android:gravity="left"
+        android:text="@string/_0_1"
+        app:layout_constraintStart_toEndOf="@+id/Stocks"
+        app:layout_constraintTop_toBottomOf="@+id/txt_box_Price" />
+
+    <TextView
+        android:id="@+id/txt_box_sector"
+        android:layout_width="147dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginLeft="304dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/not_set_2"
+        app:layout_constraintStart_toEndOf="@+id/Sector"
+        app:layout_constraintTop_toBottomOf="@+id/txt_box_AmountOfStocks" />
+
+    <TextView
+        android:id="@+id/timeStamp"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="283dp"
+        android:layout_marginLeft="283dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/textview_1"
+        app:layout_constraintStart_toEndOf="@+id/sector"
+        app:layout_constraintTop_toBottomOf="@+id/txt_box_sector" />
+
+    <TextView
+        android:id="@+id/bought_for"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="282dp"
+        android:layout_marginLeft="282dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/textview_1"
+        app:layout_constraintStart_toEndOf="@+id/txt_bought_for"
+        app:layout_constraintTop_toBottomOf="@+id/timeStamp" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/name_1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
+        android:background="@android:color/background_light"
+        android:text="@string/back_1"
+        app:layout_constraintEnd_toStartOf="@+id/Delete_btn"
+        app:layout_constraintTop_toBottomOf="@+id/txt_bought_for" />
+
+    <Button
+        android:id="@+id/Edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="@string/edit_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bought_for"
+        tools:background="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/Delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
+        android:text="@string/delete"
+        app:layout_constraintEnd_toStartOf="@+id/Edit_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
